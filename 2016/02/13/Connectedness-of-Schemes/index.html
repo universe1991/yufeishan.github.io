@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Algebra,Category Theory," />
+  <meta name="keywords" content="Algebraic Geometry,Category Theory," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
+<meta name="description" content="In this short post, we point out that the notion of connectedness of schemes is previously a special case of connected objects.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Galois Correspondences I">
-<meta property="og:url" content="http://yoursite.com/2016/01/23/Galois-Correspondences-I/index.html">
+<meta property="og:title" content="Connectedness of Schemes">
+<meta property="og:url" content="http://yoursite.com/2016/02/13/Connectedness-of-Schemes/index.html">
 <meta property="og:site_name" content="兀渊学社">
-<meta property="og:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
-<meta property="og:updated_time" content="2016-02-14T07:03:23.000Z">
+<meta property="og:description" content="In this short post, we point out that the notion of connectedness of schemes is previously a special case of connected objects.">
+<meta property="og:updated_time" content="2016-02-14T07:22:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Galois Correspondences I">
-<meta name="twitter:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
+<meta name="twitter:title" content="Connectedness of Schemes">
+<meta name="twitter:description" content="In this short post, we point out that the notion of connectedness of schemes is previously a special case of connected objects.">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> Galois Correspondences I | 兀渊学社 </title>
+  <title> Connectedness of Schemes | 兀渊学社 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -214,7 +214,7 @@
             
             
               
-                Galois Correspondences I
+                Connectedness of Schemes
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-01-23T00:00:00+08:00" content="2016-01-23">
-              2016-01-23
+            <time itemprop="dateCreated" datetime="2016-02-13T15:00:23+08:00" content="2016-02-13">
+              2016-02-13
             </time>
           </span>
 
@@ -271,48 +271,16 @@
       
 
       
-        <p>In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.</p>
-<h2 id="Galois_Connections"><a href="#Galois_Connections" class="headerlink" title="Galois Connections"></a>Galois Connections</h2><p><strong>Definition:</strong> An <strong>(antitone) Galois connection</strong> is a <em>dual adjunction</em> between posets. In other words, a Galois connection consists of the following data:</p>
-<ul>
-<li>Two posets $A, B$,</li>
-<li>Two order-reversing maps $f:A\to B$ and $g:B\to A$ ,<br>such that</li>
-<li>$a\le g(f(a))$ and $b\le f(g(b))$ for all $a\in A$, $b\in B$.</li>
-</ul>
-<p>One can see that $f$ and $g$ automatically satisfy the <em>triangle identities</em>: $$f\circ g\circ f = f, \qquad g\circ f\circ g = g,$$ and thus form a dual adjunction between posets.</p>
-<p><strong>Definition:</strong> An <strong>(antitone) Galois correspondence</strong> is a <em>dual adjoint equivalence</em> between posets, that is a Galois connection such that  $f\circ g = 1$ and $g\circ f = 1$.</p>
-<p>One can verify the following basic fact.<br><strong>Proposision:</strong> Any Galois connection $(A,B,f,g)$ induces a Galois correspondence $(g(B),f(A),f,g)$. </p>
-<p>Recall that a dual adjoint functor maps colimits to limits and gives canonical morphisms from colimits to the image of limits. Thus we have<br><strong>Proposision:</strong> Let $(A,B,f,g)$ be a Galois connection. Then for any $a_i\in A, b_j\in B$, we have<br>$$<br>\array{<br>f(\sup \{a_i\}) = \inf\{f(a_i)\},<br>&amp;\quad&amp;<br>f(\inf\{a_i\}) \ge \sup\{f(a_i)\},\\<br>g(\sup\{b_j\}) = \inf\{g(b_j)\},<br>&amp;\quad&amp;<br>g(\inf\{b_j\}) \ge \sup\{g(b_j)\}.<br>}<br>$$</p>
-<p><strong>Remark:</strong> One can also consider the notions of <em>monotone Galois connections</em> and <em>monotone Galois correspondences</em>. </p>
-<h2 id="Galois_Groups_and_Galois_Extensions"><a href="#Galois_Groups_and_Galois_Extensions" class="headerlink" title="Galois Groups and Galois Extensions"></a>Galois Groups and Galois Extensions</h2><p>Now we apply the above to algebraic field extensions. So throughout this section, every field extension is assumed to be algebraic.</p>
-<h3 id="First_Galois_Correspondence"><a href="#First_Galois_Correspondence" class="headerlink" title="First Galois Correspondence"></a>First Galois Correspondence</h3><p>First, we have the folloing Galois connection: $$<br>\array{<br>\{\text{subgroups of }\mathrm{Aut}(K)\} &amp; \longleftrightarrow &amp;<br>\{\text{subfields of }K\}.\\<br>G &amp;<br>\longrightarrow &amp;<br>K^G\\<br>\mathrm{Gal}(K/F) &amp;<br>\longleftarrow &amp;<br>F.<br>}<br>$$ Here we use $\mathrm{Gal}(K/F)$ to denote the group of automorphisms of $K$ fixing $F$.</p>
-<p>We define<br><strong>Definition:</strong> A subgroup $G$ of $\mathrm{Aut}(K)$ is called a <strong>Galois group</strong> if $G=\mathrm{Gal}(K/F)$, where $F$ is a subfield of $K$. A field extension $K/F$ is called a <strong>Galois extension</strong> if $F=K^G$, where $G$ is a subgroup of $\mathrm{Aut}(K)$.</p>
-<p>Then we obtain the Galois corresponding between Galois groups and Galois extensions. However, this correpondence is not the one the fundamental theorem of Galois theory states. To get it, we need to look closer. For the field extension side, we need to show that if $K/F$ is a Galois extension, then so are all $K/E$ where $E$ is an intermediate field of $K/F$. This follows immediately once one proves the following lemma.</p>
-<p><strong>Lemma:</strong> A field extension is a Galois extension if and only if it is the <em>splitting field</em> of a family of <em>separable polynomials</em>.<br>Note that, from this, one can see any Galois extension must be a <em>separable extension</em>.</p>
-<p>For the subgroup side, one only need to notice that the Galois subgroups must be closed. Then, we get the Galois correspondence for a Galois extension $K/F$:<br>$$<br>\array{<br>\{\text{closed subgroups of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>H &amp;<br>\longrightarrow &amp;<br>K^H\\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<h3 id="Second_Galois_Correspondence"><a href="#Second_Galois_Correspondence" class="headerlink" title="Second Galois Correspondence"></a>Second Galois Correspondence</h3><p>Now, we restrict the map $H\mapsto K^H$ to the subposet of normal subgroups of $\mathrm{Gal}(K/F)$ and identify it with the opposite of the poset of quotient of $\mathrm{Gal}(K/F)$. Then, we have the following order-reversing map<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longmapsto &amp;<br>K^H.<br>}<br>$$</p>
-<p>One can see<br>$$<br>\mathrm{Gal}(K^H/F) = \mathrm{Gal}(K/F)/H.<br>$$</p>
-<p>In other word, $\mathrm{Gal}(K^H/F)$ is a quotient of $\mathrm{Gal}(K/F)$ with kernel $H$.</p>
-<p>For an arbitrary field extension $E/F$, there is no need to be an epimorphism $$<br>\mathrm{Gal}(F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ Here $\mathrm{Gal}(F)$ denotes the <strong>absolutely Galois group</strong> $\mathrm{Gal}(F_{\mathrm{alg}}/F)$.<br>Note that, $\mathrm{Gal}(F_{\mathrm{alg}}/F) = \mathrm{Gal}(F_{\mathrm{sep}}/F)$, where $F_{\mathrm{sep}}$ is the separable closure of $F$ and $F_{\mathrm{sep}}/F$ is always Galois.</p>
-<p>We define<br><strong>Definition:</strong> A field extension $E/F$ is call a <strong>normal extension</strong> if any embedding $E\to F_{\mathrm{alg}}$ induces an automorphism of $E$ over $F$.<br>One can see that <em>Galois = normal + separable</em> if one has known the following lemma.<br><strong>Lemma:</strong> A field extension is a normal extension if and only if it is the splitting field of a family of polynomials.</p>
-<p>Now, one can now see that if $E/F$ is a normal extension, then there is a group homomorphism<br>$$<br>\array{<br>\mathrm{Gal}(F) &amp;<br>\longrightarrow &amp;<br>\mathrm{Gal}(E/F). \\<br>\sigma &amp;<br>\longmapsto &amp;<br>\sigma|_E,<br>}<br>$$ </p>
-<p>As any automorphism of a normal extension $E/F$ can be extended into an automorphism of $F_{\mathrm{alg}}/F$, the above homomorphism is surjective. The kernel of it is obviously the absolutely Galois group $\mathrm{Gal}(E)$.</p>
-<p>In this way, we get a Galois connection:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal extensions of }F\}.\\<br>\mathrm{Gal}(F)/H &amp;<br>\longrightarrow &amp;<br>F_{\mathrm{alg}}^H\\<br>\mathrm{Gal}(E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<p>Let $K/F$ be another normal extension such that $E\subset K$. Then, by the Galois connection, we have $$\mathrm{Gal}(F_{\mathrm{alg}}/K)&lt;\mathrm{Gal}(F_{\mathrm{alg}}/E).$$ Therefore there is a homomorphism $$<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ fitting into the following commutative diagram $$<br>\array{<br>\mathrm{Gal}(F_{\mathrm{alg}}/F) \\<br>\swarrow\qquad\qquad\searrow \\<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F)<br>}<br>$$ and hence an epimorphism. In particular this holds for Galois extensions $K/F$.</p>
-<p>In this way, we get a Galois correspondence:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal subextensions of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longrightarrow &amp;<br>K^H \\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<h3 id="The_Degree_Encoding"><a href="#The_Degree_Encoding" class="headerlink" title="The Degree Encoding"></a>The Degree Encoding</h3><p>Let $K/F$ be a field extension. The poset of closed subgroups of $G=\mathrm{Gal}(K/F)$ admits an order-preserving map $H\mapsto|H|$ and an order-reversing map $H\mapsto[G:H]$ to the poset of <em>supernatural numbers</em>. Moreover, we have<br>$$<br>|G| = |H|\cdot[G:H].<br>$$</p>
-<p>Likewise, the poset of intermediate fields $E$ of $K/F$ admits an order-reversing map $E\mapsto[K:E]$ and an order-preserving map $E\mapsto[E:F]$ to the poset of supernatural numbers and we have<br>$$<br>[K:F] = [K:E]\cdot[E:F].<br>$$</p>
-<p>The Galois correspondences suggest us to compare them. This is what Artin’s theorem says.</p>
-<p><strong>Artin’s Theorem:</strong> Let $K$ be a field and $G$ a closed subgroup of $\mathrm{Aut}(K)$. Then<br>$$<br>|G| = [K:K^G].<br>$$ </p>
-<p>Note that when apply to Galois extensions $K/F$, the theorem implies<br>$$<br>|H| = [K:K^H],<br>\quad\text{and}\quad<br>[G:H] = [K^H:F].<br>$$</p>
-<p>This post is long enough, so we may stop here.</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>For the missing notions and proofs in algebra, see any textbook such as</p>
-<ul>
-<li>Serge Lang, <em>Algebra</em>, 3rd ed., Addison-Wesley, 1993.</li>
-</ul>
-<p>As for the infinite case of Galois theory, especially the notion of profinite groups and supernatural numbers, see</p>
-<ul>
-<li>Michael D. Fried, Moshe Jarden, <em>Field Arithmetic</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 3, Folge 11 (3rd ed.), Springer-Verlag, 2008.</li>
-</ul>
+        <h2 id="Infinitary_extensive_categories"><a href="#Infinitary_extensive_categories" class="headerlink" title="Infinitary extensive categories"></a>Infinitary extensive categories</h2><p><strong>Definition:</strong> A category $\mathcal{C}$ is said to be <strong>infinitary extensive</strong> if it has all (small) coproducts such that pullbacks of coproduct injections along arbitrary morphisms exist and finite coproducts are disjoint and stable under pullback.</p>
+<p>One can then image coproducts in such kind of categories as generalized disjoint unions. Typical examples are topoi and some geometric categories such as $\mathrm{Top}$ and $\mathrm{Diff}$.</p>
+<p>The category $\mathrm{Sch}$ of schemes is also infinitary extensive, see <a href="http://ncatlab.org/toddtrimble/published/Dippy+disproof+of+infinitary+extensivity+of+affine+schemes" target="_blank" rel="external">here</a> for discussion on this fact.</p>
+<h2 id="Connected_schemes"><a href="#Connected_schemes" class="headerlink" title="Connected schemes"></a>Connected schemes</h2><p>We now discuss the notion of connectedness for schemes. Note that we always assume that connected spaces are nonempty. Recall that the coproducts in $\mathrm{Top}$ and $\mathrm{Sch}$ are just disjoint unions.</p>
+<p><strong>Definition:</strong> Let $\mathcal{C}$ be an infinitary extensive category. Then an object $X$ is called a <strong>connected object</strong> if the representable functor $$<br>\mathrm{Hom}(X,−)\colon\mathcal{C}\longrightarrow \mathrm{Set}<br>$$ preserves binary coproducts. Note that if this is the case, then the above representable functor preserves all coproducts.</p>
+<p><strong>Definition:</strong> A scheme $X$ is said to be <strong>connected</strong> if its underlying topological space is connected.</p>
+<p>We want to show<br><strong>Theorem:</strong> A scheme is connected if and only if it is a connected object.</p>
+<p>To prove this, recall the similar result for topological spaces.<br><strong>Lemma:</strong> A topological space is connected if and only if it is a connected object.<br><strong>Proof:</strong> Let $X$ be a connected space and $\{Y_i\}$ be a family of topological spaces. Then we always have an injective map $$\bigsqcup\mathrm{Hom}(X,Y_i)\longrightarrow\mathrm{Hom}(X,\bigsqcup Y_i).$$ As any continuous map must preserve connectedness, this map is also surjective.<br>Coversely, let $X=Y_1\sqcup Y_2$. Then the map $$\mathrm{Hom}(X,Y_1)\sqcup\mathrm{Hom}(X,Y<em>2)\longrightarrow\mathrm{Hom}(X,X)$$ is not surjective since the identity $\mathrm{id}</em>{X}$ has no preimage. This shows $X$ can not be a connected object.</p>
+<p>Note that, the underlying map of any morphism of schemes is continuous, therefore the above proof works for the theorem with a bit modifocations.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://ncatlab.org/nlab/show/connected+object" target="_blank" rel="external">https://ncatlab.org/nlab/show/connected+object</a></p>
 
       
     </div>
@@ -321,7 +289,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Algebra/" rel="tag">#Algebra</a>
+            <a href="/tags/Algebraic-Geometry/" rel="tag">#Algebraic Geometry</a>
           
             <a href="/tags/Category-Theory/" rel="tag">#Category Theory</a>
           
@@ -332,17 +300,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/01/hello/" rel="next" title="Welcome!">
-                <i class="fa fa-chevron-left"></i> Welcome!
+              <a href="/2016/01/23/Galois-Correspondences-I/" rel="next" title="Galois Correspondences I">
+                <i class="fa fa-chevron-left"></i> Galois Correspondences I
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/13/Connectedness-of-Schemes/" rel="prev" title="Connectedness of Schemes">
-                Connectedness of Schemes <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +440,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Connections"><span class="nav-number">1.</span> <span class="nav-text">Galois Connections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Groups_and_Galois_Extensions"><span class="nav-number">2.</span> <span class="nav-text">Galois Groups and Galois Extensions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First_Galois_Correspondence"><span class="nav-number">2.1.</span> <span class="nav-text">First Galois Correspondence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second_Galois_Correspondence"><span class="nav-number">2.2.</span> <span class="nav-text">Second Galois Correspondence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The_Degree_Encoding"><span class="nav-number">2.3.</span> <span class="nav-text">The Degree Encoding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Infinitary_extensive_categories"><span class="nav-number">1.</span> <span class="nav-text">Infinitary extensive categories</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Connected_schemes"><span class="nav-number">2.</span> <span class="nav-text">Connected schemes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
