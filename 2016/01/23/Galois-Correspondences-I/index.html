@@ -1,0 +1,767 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Algebra,Category-Theory," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.
+Galois ConnectionsDefinition: An (antitone) Galois connection is a dual adjunction betw">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Galois Correspondences I">
+<meta property="og:url" content="http://yoursite.com/2016/01/23/Galois-Correspondences-I/index.html">
+<meta property="og:site_name" content="兀渊学社">
+<meta property="og:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.
+Galois ConnectionsDefinition: An (antitone) Galois connection is a dual adjunction betw">
+<meta property="og:updated_time" content="2016-02-14T06:31:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Galois Correspondences I">
+<meta name="twitter:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.
+Galois ConnectionsDefinition: An (antitone) Galois connection is a dual adjunction betw">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> Galois Correspondences I | 兀渊学社 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">兀渊学社</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Ecole π</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Galois Correspondences I
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-01-23T00:00:00+08:00" content="2016-01-23">
+              2016-01-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index">
+                    <span itemprop="name">Math</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.</p>
+<h2 id="Galois_Connections"><a href="#Galois_Connections" class="headerlink" title="Galois Connections"></a>Galois Connections</h2><p><strong>Definition:</strong> An <strong>(antitone) Galois connection</strong> is a <em>dual adjunction</em> between posets. In other words, a Galois connection consists of the following data:</p>
+<ul>
+<li>Two posets $A, B$,</li>
+<li>Two order-reversing maps $f:A\to B$ and $g:B\to A$ ,<br>such that</li>
+<li>$a\le g(f(a))$ and $b\le f(g(b))$ for all $a\in A$, $b\in B$.</li>
+</ul>
+<p>One can see that $f$ and $g$ automatically satisfy the <em>triangle identities</em>: $$f\circ g\circ f = f, \qquad g\circ f\circ g = g,$$ and thus form a dual adjunction between posets.</p>
+<p><strong>Definition:</strong> An <strong>(antitone) Galois correspondence</strong> is a <em>dual adjoint equivalence</em> between posets, that is a Galois connection such that  $f\circ g = 1$ and $g\circ f = 1$.</p>
+<p>One can verify the following basic fact.<br><strong>Proposision:</strong> Any Galois connection $(A,B,f,g)$ induces a Galois correspondence $(g(B),f(A),f,g)$. </p>
+<p>Recall that a dual adjoint functor maps colimits to limits and gives canonical morphisms from colimits to the image of limits. Thus we have<br><strong>Proposision:</strong> Let $(A,B,f,g)$ be a Galois connection. Then for any $a_i\in A, b_j\in B$, we have<br>$$<br>\array{<br>f(\sup \{a_i\}) = \inf\{f(a_i)\},<br>&amp;\quad&amp;<br>f(\inf\{a_i\}) \ge \sup\{f(a_i)\},\\<br>g(\sup\{b_j\}) = \inf\{g(b_j)\},<br>&amp;\quad&amp;<br>g(\inf\{b_j\}) \ge \sup\{g(b_j)\}.<br>}<br>$$</p>
+<p><strong>Remark:</strong> One can also consider the notions of <em>monotone Galois connections</em> and <em>monotone Galois correspondences</em>. </p>
+<h2 id="Galois_Groups_and_Galois_Extensions"><a href="#Galois_Groups_and_Galois_Extensions" class="headerlink" title="Galois Groups and Galois Extensions"></a>Galois Groups and Galois Extensions</h2><p>Now we apply the above to algebraic field extensions. So throughout this section, every field extension is assumed to be algebraic.</p>
+<h4 id="First_Galois_Correspondence"><a href="#First_Galois_Correspondence" class="headerlink" title="First Galois Correspondence"></a>First Galois Correspondence</h4><p>First, we have the folloing Galois connection: $$<br>\array{<br>\{\text{subgroups of }\mathrm{Aut}(K)\} &amp; \longleftrightarrow &amp;<br>\{\text{subfields of }K\}.\\<br>G &amp;<br>\longrightarrow &amp;<br>K^G\\<br>\mathrm{Gal}(K/F) &amp;<br>\longleftarrow &amp;<br>F.<br>}<br>$$ Here we use $\mathrm{Gal}(K/F)$ to denote the group of automorphisms of $K$ fixing $F$.</p>
+<p>We define<br><strong>Definition:</strong> A subgroup $G$ of $\mathrm{Aut}(K)$ is called a <strong>Galois group</strong> if $G=\mathrm{Gal}(K/F)$, where $F$ is a subfield of $K$. A field extension $K/F$ is called a <strong>Galois extension</strong> if $F=K^G$, where $G$ is a subgroup of $\mathrm{Aut}(K)$.</p>
+<p>Then we obtain the Galois corresponding between Galois groups and Galois extensions. However, this correpondence is not the one the fundamental theorem of Galois theory states. To get it, we need to look closer. For the field extension side, we need to show that if $K/F$ is a Galois extension, then so are all $K/E$ where $E$ is an intermediate field of $K/F$. This follows immediately once one proves the following lemma.</p>
+<p><strong>Lemma:</strong> A field extension is a Galois extension if and only if it is the <em>splitting field</em> of a family of <em>separable polynomials</em>.<br>Note that, from this, one can see any Galois extension must be a <em>separable extension</em>.</p>
+<p>For the subgroup side, one only need to notice that the Galois subgroups must be closed. Then, we get the Galois correspondence for a Galois extension $K/F$:<br>$$<br>\array{<br>\{\text{closed subgroups of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>H &amp;<br>\longrightarrow &amp;<br>K^H\\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
+<h4 id="Second_Galois_Correspondence"><a href="#Second_Galois_Correspondence" class="headerlink" title="Second Galois Correspondence"></a>Second Galois Correspondence</h4><p>Now, we restrict the map $H\mapsto K^H$ to the subposet of normal subgroups of $\mathrm{Gal}(K/F)$ and identify it with the opposite of the poset of quotient of $\mathrm{Gal}(K/F)$. Then, we have the following order-reversing map<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longmapsto &amp;<br>K^H.<br>}<br>$$</p>
+<p>One can see<br>$$<br>\mathrm{Gal}(K^H/F) = \mathrm{Gal}(K/F)/H.<br>$$</p>
+<p>In other word, $\mathrm{Gal}(K^H/F)$ is a quotient of $\mathrm{Gal}(K/F)$ with kernel $H$.</p>
+<p>For an arbitrary field extension $E/F$, there is no need to be an epimorphism $$<br>\mathrm{Gal}(F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ Here $\mathrm{Gal}(F)$ denotes the <strong>absolutely Galois group</strong> $\mathrm{Gal}(F_{\mathrm{alg}}/F)$.<br>Note that, $\mathrm{Gal}(F_{\mathrm{alg}}/F) = \mathrm{Gal}(F_{\mathrm{sep}}/F)$, where $F_{\mathrm{sep}}$ is the separable closure of $F$ and $F_{\mathrm{sep}}/F$ is always Galois.</p>
+<p>We define<br><strong>Definition:</strong> A field extension $E/F$ is call a <strong>normal extension</strong> if any embedding $E\to F_{\mathrm{alg}}$ induces an automorphism of $E$ over $F$.<br>One can see that <em>Galois = normal + separable</em> if one has known the following lemma.<br><strong>Lemma:</strong> A field extension is a normal extension if and only if it is the splitting field of a family of polynomials.</p>
+<p>Now, one can now see that if $E/F$ is a normal extension, then there is a group homomorphism<br>$$<br>\array{<br>\mathrm{Gal}(F) &amp;<br>\longrightarrow &amp;<br>\mathrm{Gal}(E/F). \\<br>\sigma &amp;<br>\longmapsto &amp;<br>\sigma|_E,<br>}<br>$$ </p>
+<p>As any automorphism of a normal extension $E/F$ can be extended into an automorphism of $F_{\mathrm{alg}}/F$, the above homomorphism is surjective. The kernel of it is obviously the absolutely Galois group $\mathrm{Gal}(E)$.</p>
+<p>In this way, we get a Galois connection:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal extensions of }F\}.\\<br>\mathrm{Gal}(F)/H &amp;<br>\longrightarrow &amp;<br>F_{\mathrm{alg}}^H\\<br>\mathrm{Gal}(E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
+<p>Let $K/F$ be another normal extension such that $E\subset K$. Then, by the Galois connection, we have $$\mathrm{Gal}(F_{\mathrm{alg}}/K)&lt;\mathrm{Gal}(F_{\mathrm{alg}}/E).$$ Therefore there is a homomorphism $$<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ fitting into the following commutative diagram $$<br>\array{<br>\mathrm{Gal}(F_{\mathrm{alg}}/F) \\<br>\swarrow\qquad\qquad\searrow \\<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F)<br>}<br>$$ and hence an epimorphism. In particular this holds for Galois extensions $K/F$.</p>
+<p>In this way, we get a Galois correspondence:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal subextensions of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longrightarrow &amp;<br>K^H \\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
+<h3 id="The_Degree_Encoding"><a href="#The_Degree_Encoding" class="headerlink" title="The Degree Encoding"></a>The Degree Encoding</h3><p>Let $K/F$ be a field extension. The poset of closed subgroups of $G=\mathrm{Gal}(K/F)$ admits an order-preserving map $H\mapsto|H|$ and an order-reversing map $H\mapsto[G:H]$ to the poset of <em>supernatural numbers</em>. Moreover, we have<br>$$<br>|G| = |H|\cdot[G:H].<br>$$</p>
+<p>Likewise, the poset of intermediate fields $E$ of $K/F$ admits an order-reversing map $E\mapsto[K:E]$ and an order-preserving map $E\mapsto[E:F]$ to the poset of supernatural numbers and we have<br>$$<br>[K:F] = [K:E]\cdot[E:F].<br>$$</p>
+<p>The Galois correspondences suggest us to compare them. This is what Artin’s theorem says.</p>
+<p><strong>Artin’s Theorem:</strong> Let $K$ be a field and $G$ a closed subgroup of $\mathrm{Aut}(K)$. Then<br>$$<br>|G| = [K:K^G].<br>$$ </p>
+<p>Note that when apply to Galois extensions $K/F$, the theorem implies<br>$$<br>|H| = [K:K^H],<br>\quad\text{and}\quad<br>[G:H] = [K^H:F].<br>$$</p>
+<p>This post is long enough, so we may stop here.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>For the missing notions and proofs in algebra, see any textbook such as</p>
+<ul>
+<li>Serge Lang, <em>Algebra</em>, 3rd ed., Addison-Wesley, 1993.</li>
+</ul>
+<p>As for the infinite case of Galois theory, especially the notion of profinite groups and supernatural numbers, see</p>
+<ul>
+<li>Michael D. Fried, Moshe Jarden, <em>Field Arithmetic</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 3, Folge 11 (3rd ed.), Springer-Verlag, 2008.</li>
+</ul>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Algebra/" rel="tag">#Algebra</a>
+          
+            <a href="/tags/Category-Theory/" rel="tag">#Category-Theory</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/01/hello/" rel="next" title="Welcome!">
+                <i class="fa fa-chevron-left"></i> Welcome!
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Gau, Syu" />
+          <p class="site-author-name" itemprop="name">Gau, Syu</p>
+          <p class="site-description motion-element" itemprop="description">渊渊其渊，昊昊其天</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+          
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/GauSyu" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Connections"><span class="nav-number">1.</span> <span class="nav-text">Galois Connections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Groups_and_Galois_Extensions"><span class="nav-number">2.</span> <span class="nav-text">Galois Groups and Galois Extensions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#First_Galois_Correspondence"><span class="nav-number">2.0.1.</span> <span class="nav-text">First Galois Correspondence</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Second_Galois_Correspondence"><span class="nav-number">2.0.2.</span> <span class="nav-text">Second Galois Correspondence</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The_Degree_Encoding"><span class="nav-number">2.1.</span> <span class="nav-text">The Degree Encoding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gau, Syu</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+  
+
+
+</body>
+</html>
