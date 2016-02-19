@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Algebra,Category Theory," />
+  <meta name="keywords" content="Algebraic Topology,Category Theory," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
+<meta name="description" content="In this post, we give the Galois correspondence for covering spaces. This is actually somehow trivial.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Galois Correspondences I">
-<meta property="og:url" content="http://yoursite.com/2016/01/23/Galois-Correspondences-I/index.html">
+<meta property="og:title" content="Galois Correspondences III">
+<meta property="og:url" content="http://yoursite.com/2016/02/18/Galois-Correspondences-III/index.html">
 <meta property="og:site_name" content="兀渊学社">
-<meta property="og:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
-<meta property="og:updated_time" content="2016-02-14T11:35:37.000Z">
+<meta property="og:description" content="In this post, we give the Galois correspondence for covering spaces. This is actually somehow trivial.">
+<meta property="og:updated_time" content="2016-02-19T04:11:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Galois Correspondences I">
-<meta name="twitter:description" content="In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.">
+<meta name="twitter:title" content="Galois Correspondences III">
+<meta name="twitter:description" content="In this post, we give the Galois correspondence for covering spaces. This is actually somehow trivial.">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> Galois Correspondences I | 兀渊学社 </title>
+  <title> Galois Correspondences III | 兀渊学社 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -214,7 +214,7 @@
             
             
               
-                Galois Correspondences I
+                Galois Correspondences III
               
             
           </h1>
@@ -226,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-01-23T00:00:00+08:00" content="2016-01-23">
-              2016-01-23
+            <time itemprop="dateCreated" datetime="2016-02-18T11:02:19+08:00" content="2016-02-18">
+              2016-02-18
             </time>
           </span>
 
@@ -271,48 +271,31 @@
       
 
       
-        <p>In this post, we discuss the fundamental theorem of Galois theory along the consideration of Galois connections.</p>
-<h2 id="Galois_Connections"><a href="#Galois_Connections" class="headerlink" title="Galois Connections"></a>Galois Connections</h2><p><strong>Definition:</strong> An <strong>(antitone) Galois connection</strong> is a <em>dual adjunction</em> between posets. In other words, a Galois connection consists of the following data:</p>
+        <p>This time, we consider another kind of Galois correspondence.</p>
+<h2 id="Preliminaries"><a href="#Preliminaries" class="headerlink" title="Preliminaries"></a>Preliminaries</h2><p>Let $X$ be a topological space. We first recall some notions in topology.</p>
+<p><strong>Definition:</strong> A <strong>covering space</strong> $Y$ over $X$ is a bundle $p\colon Y\to X$ which is <em>locally trival</em> and with <em>discrete fibers</em>. In plain words, the condition means for every point $x\in X$, there exists an open neighborhood $U$ such that the pullback $p^{-1}(U)\to U$ is isomorphic to a projection $U\times F\to U$ with $F$ a nonempty discrete set.<br>$$<br>\array{<br>p^{-1}(U) \stackrel{\cong}{\longrightarrow} U\times F \\<br>p\searrow\quad\swarrow\mathrm{pr} \\<br>U<br>}<br>$$</p>
+<p><strong>Definition:</strong> The <strong>fundamental group</strong> $\pi(X,x)$ of $X$ at a point $x\in X$ is the group of homotopy classes of loops through $x$ and lie in $X$.</p>
+<p>Under the assumption that $X$ is <em>connected</em>, <em>locally path-connected</em> and <em>semi-locally simply-connected</em>, the group $\pi(X,x)$ is independent of the choice of $x$. In this case, we denote $\pi(X)$ for short. However, we still need to fix a base point $x$. We will keep this assumption throughout this post.</p>
+<h2 id="Galois_correspondence_for_covering_spaces"><a href="#Galois_correspondence_for_covering_spaces" class="headerlink" title="Galois correspondence for covering spaces"></a>Galois correspondence for covering spaces</h2><h3 id="From_covering_spaces_to__24_5Cpi_28X_29_24-sets"><a href="#From_covering_spaces_to__24_5Cpi_28X_29_24-sets" class="headerlink" title="From covering spaces to $\pi(X)$-sets"></a>From covering spaces to $\pi(X)$-sets</h3><p>Let $p\colon Y\to X$ be a covering space. Then $p^{-1}(x)$ is a $\pi(X)$-set whose action is given as follows: the <em>unique path-lifting lemma</em> says that given a point $y_1\in p^{-1}(x)$, any loop $\phi$ in $X$ start at $x$ can be uniquely lifted to a path in $Y$ from $y_1$ to another point $y_2\in p^{-1}(x)$. The homotopic loops give the same point $y_2$, thus we define the result of the action of this homotopy class $[\phi]$ on $y_1$ to be $y_2$.</p>
+<p>Let $f\colon Y\to Y’$ be a morphism of covering spaces of $X$. Then it induces a continuous $\pi(X)$-map from $p^{-1}(x)$ to $p’^{-1}(x)$. In this way, we get a functor from the category $\mathrm{Cov}/X$ of covering spaces of $X$ to the category of $\pi(X)$-sets:<br>$$<br>\mathcal{F}_x\colon\mathrm{Cov}/X\longrightarrow\pi(X)\text{-}\mathrm{Set}.<br>$$</p>
+<h3 id="The_universal_covering_space"><a href="#The_universal_covering_space" class="headerlink" title="The universal covering space"></a>The universal covering space</h3><p>Let $\widetilde{X}$ be the topological space whose underlying set is the set of all homotopy classes of paths in $X$ starting at the base point $x$ and whose topology is the weakest one making the following map continuous:<br>$$<br>p\colon\widetilde{X}\to X,\quad<br>[\gamma]\mapsto\gamma(1).<br>$$</p>
+<p>For convenience, we fix the bas point $\tilde{x}$ of $\widetilde{X}$  to be the homotopy class of the trivial loops through $x$.</p>
+<p>Then $p\colon\widetilde{X}\to X$ is the <strong>universal covering space</strong> of $X$ in the sense that for any connected covering space $Y\to X$, there exists a morphism of covering spaces of $X$: $$<br>\array{<br>\widetilde{X} \stackrel{\exists!}{\longrightarrow} Y \\<br>\searrow\quad\swarrow \\<br>X<br>}<br>$$ and this morphism is unique if we require it to preserve the base points. When we choice $y\in p^{-1}(x)$ to be the base point of $Y$, the morphism is given as follows: the <em>unique path-lifting lemma</em> allows us to lift every path $\gamma$ start at $x$ in $X$ to a path start at $y$ in $Y$, we define the image of $[\gamma]$ to be the end of this path.</p>
+<p>Note that the universal covering space naturally has a free $\pi(X)$-action given by composition of homotopy classes of paths. For any subgroup $H$ of $\pi(X)$, the orbit space $\widetilde{X}/H$ also gives a connected covering space of $X$ whose fibers are isomorphic to $\pi(X)/H$.</p>
+<h3 id="From__24_5Cpi_28X_29_24-sets_to_covering_spaces"><a href="#From__24_5Cpi_28X_29_24-sets_to_covering_spaces" class="headerlink" title="From $\pi(X)$-sets to covering spaces"></a>From $\pi(X)$-sets to covering spaces</h3><p>Let $S$ be a $\pi(X)$-set. Then, we may write<br>$$<br>S = \bigsqcup \pi(X)s.<br>$$</p>
+<p>We define $$<br>F(S) = \bigsqcup \widetilde{X}/\pi(X)_s,<br>$$ and the bundle map $p\colon F(S)\to X$ is the one induced from the previous property of universal covering space. One can see the canonical $\pi(X)$-map $$<br>S\longrightarrow p^{-1}(x)<br>$$ is bijective.</p>
+<p>Note that this induces a functor<br>$$<br>F\colon \pi(X)\text{-}\mathrm{Set}\longrightarrow\mathrm{Cov}/X.<br>$$</p>
+<h3 id="The_equivalence"><a href="#The_equivalence" class="headerlink" title="The equivalence"></a>The equivalence</h3><p>Given a covering space $p\colon Y\to X$, we have a $\pi(X)$-set $p^{-1}(x)$ where $x$ is a point of $X$. Assume $p^{-1}(x) = \bigsqcup \pi(X)y$, we have $$F(p^{-1}(x)) = \bigsqcup \widetilde{X}/\pi(X)_y.$$ </p>
+<p>As elements of $\pi(X)_y$ fix $y\in p^{-1}(x)$, the unique morphism of covering spaces of $X$ from $\widetilde{X}$ to $Y$ mapping $\tilde{x}$ to $y$ factors through $\widetilde{X}/\pi(X)_y$. In this way, we have a canonical morphism of covering spaces of $X$: $$F(p^{-1}(x))\longrightarrow Y.$$</p>
+<p>It is not difficult to see that $Y$ is connected if and only if $\pi(X)$ acts transitive on $p^{-1}(x)$. Therefore, the orbit decomposition of $p^{-1}(x)$ corresponds to the connected components decomposition of $Y$. In this way, we see the moprhism $$F(p^{-1}(x))\longrightarrow Y$$ is an isomoprhism.</p>
+<p>Now, we get the Galois correspondence for covering spaces.</p>
+<p><strong>Theorem:</strong> Let $X$ be a <em>connected</em>, <em>locally path-connected</em> and <em>semi-locally simply-connected</em> space. Then we have an equivalence of categories $$<br>\mathrm{Cov}/X\cong\pi(X)\text{-}\mathrm{Set}.<br>$$</p>
+<h2 id="Rethinking"><a href="#Rethinking" class="headerlink" title="Rethinking"></a>Rethinking</h2><p>It is easy to verify that the universal covering space $\widetilde{X}$ represents the functor $\mathcal{F}_x$. Moreover, we have $$\mathrm{Aut}_X(\widetilde{X}) \cong \pi(X),$$ and $$\mathrm{Aut}_X(\widetilde{X}) &lt; \mathrm{Aut}(\mathcal{F}_x).$$ However, $\mathrm{Aut}_X(\widetilde{X})$ is in general not isomorphic to $\mathrm{Aut}(\mathcal{F}_x)$. </p>
+<p>What’s more, by only assume $X$ is connected, the functor $\mathcal{F}_x$ still works and is independent of the choice of $x$, while the universal covering $\widetilde{X}$ may not exists.</p>
+<p>Let’s stop this post here and leave further discussions next time.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>One can take a loo at </p>
 <ul>
-<li>Two posets $A, B$,</li>
-<li>Two order-reversing maps $f:A\to B$ and $g:B\to A$ ,<br>such that</li>
-<li>$a\le g(f(a))$ and $b\le f(g(b))$ for all $a\in A$, $b\in B$.</li>
-</ul>
-<p>One can see that $f$ and $g$ automatically satisfy the <em>triangle identities</em>: $$f\circ g\circ f = f, \qquad g\circ f\circ g = g,$$ and thus form a dual adjunction between posets.</p>
-<p><strong>Definition:</strong> An <strong>(antitone) Galois correspondence</strong> is a <em>dual adjoint equivalence</em> between posets, that is a Galois connection such that  $f\circ g = 1$ and $g\circ f = 1$.</p>
-<p>One can verify the following basic fact.<br><strong>Proposision:</strong> Any Galois connection $(A,B,f,g)$ induces a Galois correspondence $(g(B),f(A),f,g)$. </p>
-<p>Recall that a dual adjoint functor maps colimits to limits and gives canonical morphisms from colimits to the image of limits. Thus we have<br><strong>Proposision:</strong> Let $(A,B,f,g)$ be a Galois connection. Then for any $a_i\in A, b_j\in B$, we have<br>$$<br>\array{<br>f(\sup \{a_i\}) = \inf\{f(a_i)\},<br>&amp;\quad&amp;<br>f(\inf\{a_i\}) \ge \sup\{f(a_i)\},\\<br>g(\sup\{b_j\}) = \inf\{g(b_j)\},<br>&amp;\quad&amp;<br>g(\inf\{b_j\}) \ge \sup\{g(b_j)\}.<br>}<br>$$</p>
-<p><strong>Remark:</strong> One can also consider the notions of <em>monotone Galois connections</em> and <em>monotone Galois correspondences</em>. </p>
-<h2 id="Galois_Groups_and_Galois_Extensions"><a href="#Galois_Groups_and_Galois_Extensions" class="headerlink" title="Galois Groups and Galois Extensions"></a>Galois Groups and Galois Extensions</h2><p>Now we apply the above to algebraic field extensions. So throughout this section, every field extension is assumed to be algebraic.</p>
-<h3 id="First_Galois_Correspondence"><a href="#First_Galois_Correspondence" class="headerlink" title="First Galois Correspondence"></a>First Galois Correspondence</h3><p>First, we have the folloing Galois connection: $$<br>\array{<br>\{\text{subgroups of }\mathrm{Aut}(K)\} &amp; \longleftrightarrow &amp;<br>\{\text{subfields of }K\}.\\<br>G &amp;<br>\longrightarrow &amp;<br>K^G\\<br>\mathrm{Gal}(K/F) &amp;<br>\longleftarrow &amp;<br>F.<br>}<br>$$ Here we use $\mathrm{Gal}(K/F)$ to denote the group of automorphisms of $K$ fixing $F$.</p>
-<p>We define<br><strong>Definition:</strong> A subgroup $G$ of $\mathrm{Aut}(K)$ is called a <strong>Galois group</strong> if $G=\mathrm{Gal}(K/F)$, where $F$ is a subfield of $K$. A field extension $K/F$ is called a <strong>Galois extension</strong> if $F=K^G$, where $G$ is a subgroup of $\mathrm{Aut}(K)$.</p>
-<p>Then we obtain the Galois corresponding between Galois groups and Galois extensions. However, this correpondence is not the one the fundamental theorem of Galois theory states. To get it, we need to look closer. For the field extension side, we need to show that if $K/F$ is a Galois extension, then so are all $K/E$ where $E$ is an intermediate field of $K/F$. This follows immediately once one proves the following lemma.</p>
-<p><strong>Lemma:</strong> A field extension is a Galois extension if and only if it is the <em>splitting field</em> of a family of <em>separable polynomials</em>.<br>Note that, from this, one can see any Galois extension must be a <em>separable extension</em>.</p>
-<p>For the subgroup side, one only need to notice that the Galois subgroups must be closed. Then, we get the Galois correspondence for a Galois extension $K/F$:<br>$$<br>\array{<br>\{\text{closed subgroups of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>H &amp;<br>\longrightarrow &amp;<br>K^H\\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<p>Note that under this corresponding, open subgroups of $\mathrm{Gal}(K/F)$ correspond finite subextensions of $K/F$.</p>
-<h3 id="Second_Galois_Correspondence"><a href="#Second_Galois_Correspondence" class="headerlink" title="Second Galois Correspondence"></a>Second Galois Correspondence</h3><p>Now, we restrict the map $H\mapsto K^H$ to the subposet of normal subgroups of $\mathrm{Gal}(K/F)$ and identify it with the opposite of the poset of quotient of $\mathrm{Gal}(K/F)$. Then, we have the following order-reversing map<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{intermediate fields of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longmapsto &amp;<br>K^H.<br>}<br>$$</p>
-<p>One can see<br>$$<br>\mathrm{Gal}(K^H/F) = \mathrm{Gal}(K/F)/H.<br>$$</p>
-<p>In other word, $\mathrm{Gal}(K^H/F)$ is a quotient of $\mathrm{Gal}(K/F)$ with kernel $H$.</p>
-<p>For an arbitrary field extension $E/F$, there is no need to be an epimorphism $$<br>\mathrm{Gal}(F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ Here $\mathrm{Gal}(F)$ denotes the <strong>absolutely Galois group</strong> $\mathrm{Gal}(F_{\mathrm{alg}}/F)$.<br>Note that, $\mathrm{Gal}(F_{\mathrm{alg}}/F) = \mathrm{Gal}(F_{\mathrm{sep}}/F)$, where $F_{\mathrm{sep}}$ is the separable closure of $F$ and $F_{\mathrm{sep}}/F$ is always Galois.</p>
-<p>We define<br><strong>Definition:</strong> A field extension $E/F$ is call a <strong>normal extension</strong> if any embedding $E\to F_{\mathrm{alg}}$ induces an automorphism of $E$ over $F$.<br>One can see that <em>Galois = normal + separable</em> if one has known the following lemma.<br><strong>Lemma:</strong> A field extension is a normal extension if and only if it is the splitting field of a family of polynomials.</p>
-<p>Now, one can now see that if $E/F$ is a normal extension, then there is a group homomorphism<br>$$<br>\array{<br>\mathrm{Gal}(F) &amp;<br>\longrightarrow &amp;<br>\mathrm{Gal}(E/F). \\<br>\sigma &amp;<br>\longmapsto &amp;<br>\sigma|_E,<br>}<br>$$ </p>
-<p>As any automorphism of a normal extension $E/F$ can be extended into an automorphism of $F_{\mathrm{alg}}/F$, the above homomorphism is surjective. The kernel of it is obviously the absolutely Galois group $\mathrm{Gal}(E)$.</p>
-<p>In this way, we get a Galois connection:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal extensions of }F\}.\\<br>\mathrm{Gal}(F)/H &amp;<br>\longrightarrow &amp;<br>F_{\mathrm{alg}}^H\\<br>\mathrm{Gal}(E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<p>Let $K/F$ be another normal extension such that $E\subset K$. Then, by the Galois connection, we have $$\mathrm{Gal}(F_{\mathrm{alg}}/K)&lt;\mathrm{Gal}(F_{\mathrm{alg}}/E).$$ Therefore there is a homomorphism $$<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F).<br>$$ fitting into the following commutative diagram $$<br>\array{<br>\mathrm{Gal}(F_{\mathrm{alg}}/F) \\<br>\swarrow\qquad\qquad\searrow \\<br>\mathrm{Gal}(K/F)\longrightarrow\mathrm{Gal}(E/F)<br>}<br>$$ and hence an epimorphism. In particular this holds for Galois extensions $K/F$.</p>
-<p>In this way, we get a Galois correspondence:<br>$$<br>\array{<br>\{\text{quotients of }\mathrm{Gal}(K/F)\} &amp; \longleftrightarrow &amp;<br>\{\text{normal subextensions of }K/F\}.\\<br>\mathrm{Gal}(K/F)/H &amp;<br>\longrightarrow &amp;<br>K^H \\<br>\mathrm{Gal}(K/E) &amp;<br>\longleftarrow &amp;<br>E.<br>}<br>$$</p>
-<h3 id="The_Degree_Encoding"><a href="#The_Degree_Encoding" class="headerlink" title="The Degree Encoding"></a>The Degree Encoding</h3><p>Let $K/F$ be a field extension. The poset of closed subgroups of $G=\mathrm{Gal}(K/F)$ admits an order-preserving map $H\mapsto|H|$ and an order-reversing map $H\mapsto[G:H]$ to the poset of <em>supernatural numbers</em>. Moreover, we have<br>$$<br>|G| = |H|\cdot[G:H].<br>$$</p>
-<p>Likewise, the poset of intermediate fields $E$ of $K/F$ admits an order-reversing map $E\mapsto[K:E]$ and an order-preserving map $E\mapsto[E:F]$ to the poset of supernatural numbers and we have<br>$$<br>[K:F] = [K:E]\cdot[E:F].<br>$$</p>
-<p>The Galois correspondences suggest us to compare them. This is what Artin’s theorem says.</p>
-<p><strong>Artin’s Theorem:</strong> Let $K$ be a field and $G$ a closed subgroup of $\mathrm{Aut}(K)$. Then<br>$$<br>|G| = [K:K^G].<br>$$ </p>
-<p>Note that when apply to Galois extensions $K/F$, the theorem implies<br>$$<br>|H| = [K:K^H],<br>\quad\text{and}\quad<br>[G:H] = [K^H:F].<br>$$</p>
-<p>This post is long enough, so we may stop here.</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>For the missing notions and proofs in algebra, see any textbook such as</p>
-<ul>
-<li>Serge Lang, <em>Algebra</em>, 3rd ed., Addison-Wesley, 1993.</li>
-</ul>
-<p>As for the infinite case of Galois theory, especially the notion of profinite groups and supernatural numbers, see</p>
-<ul>
-<li>Michael D. Fried, Moshe Jarden, <em>Field Arithmetic</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 3, Folge 11 (3rd ed.), Springer-Verlag, 2008.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em>, Cambridge University Press, 2002.</li>
 </ul>
 
       
@@ -322,7 +305,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Algebra/" rel="tag">#Algebra</a>
+            <a href="/tags/Algebraic-Topology/" rel="tag">#Algebraic Topology</a>
           
             <a href="/tags/Category-Theory/" rel="tag">#Category Theory</a>
           
@@ -333,17 +316,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/01/hello/" rel="next" title="Welcome!">
-                <i class="fa fa-chevron-left"></i> Welcome!
+              <a href="/2016/02/16/Galois-Correspondences-II/" rel="next" title="Galois Correspondences II">
+                <i class="fa fa-chevron-left"></i> Galois Correspondences II
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/13/Connectedness-of-Schemes/" rel="prev" title="Connectedness of Schemes">
-                Connectedness of Schemes <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -477,7 +456,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Connections"><span class="nav-number">1.</span> <span class="nav-text">Galois Connections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_Groups_and_Galois_Extensions"><span class="nav-number">2.</span> <span class="nav-text">Galois Groups and Galois Extensions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First_Galois_Correspondence"><span class="nav-number">2.1.</span> <span class="nav-text">First Galois Correspondence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second_Galois_Correspondence"><span class="nav-number">2.2.</span> <span class="nav-text">Second Galois Correspondence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The_Degree_Encoding"><span class="nav-number">2.3.</span> <span class="nav-text">The Degree Encoding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preliminaries"><span class="nav-number">1.</span> <span class="nav-text">Preliminaries</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Galois_correspondence_for_covering_spaces"><span class="nav-number">2.</span> <span class="nav-text">Galois correspondence for covering spaces</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#From_covering_spaces_to__24_5Cpi_28X_29_24-sets"><span class="nav-number">2.1.</span> <span class="nav-text">From covering spaces to $\pi(X)$-sets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The_universal_covering_space"><span class="nav-number">2.2.</span> <span class="nav-text">The universal covering space</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#From__24_5Cpi_28X_29_24-sets_to_covering_spaces"><span class="nav-number">2.3.</span> <span class="nav-text">From $\pi(X)$-sets to covering spaces</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The_equivalence"><span class="nav-number">2.4.</span> <span class="nav-text">The equivalence</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rethinking"><span class="nav-number">3.</span> <span class="nav-text">Rethinking</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
