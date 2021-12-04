@@ -23,11 +23,11 @@ profile:
     name                 : "Gau, Syu"
     email                : "gausyu@gmail.com"
     description          : &description "personal description"
-    image                : "img/xhs.png"
+    image                : "img/IMG_2952.jpeg"
     cv                   : "cv.pdf"
     employer             : "UCSC"
     orcid                : "0000-0001-8284-6955"
-    github               : "xinghuan-stear"
+    github               : "gausyu"
 
 
 # Reading Files
