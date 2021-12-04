@@ -6,12 +6,4 @@ permalink: /
 
 ### *Hi! This is Xu Gao,<br> a PhD candidate in mathematics at<br> University of California, Santa Cruz.*
 
-*This is a temp site for test purpose.*
-
-Here should be some words to **introduce** myself.
-
-Then here should be more words to show my **interesting**.
-
-Then here may be a list of **publications** (*but what are they?*)
-
-And a few more words on my **current lives**.
+I have a wide range of interests in mathematics: number theory, algebraic geometry, representation theory, algebraic topology, category theory, etc. At present, my research focuses on p-adic representations and Bruhat-Tits buildings. More precisely, I'm interested in the stable simplices in the Bruhat-Tits building obtained from a p-adic representation.
