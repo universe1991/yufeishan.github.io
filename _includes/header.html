@@ -1,0 +1,31 @@
+<div class="header">
+	<!-- Nav Bar -->
+	<ul class="nav nav-pills pull-right">
+		{% assign sorted_pages = site.data.navigation.main %}
+		{% for p in sorted_pages %}
+			{% if p.dropdown %}
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						{{ p.title }}
+					</a>
+					<ul class="dropdown-menu">
+						{% for child in p.children %}
+							<li class="">
+								<a href="{{ child.url | relative_url }}" title="{{ child.title }}">
+									{{ child.title }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+			{% else %}
+				<li class="{% if page.title == p.title %}active{% endif %}">
+					<a href="{{ p.url | relative_url }}" title="{{ p.title }}">
+						{{ p.title }}
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+	<h3 class="text-muted" ><a href="/">{{ site.title }}</a></h3>
+</div> <!-- /header -->
