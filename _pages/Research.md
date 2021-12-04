@@ -6,7 +6,8 @@ permalink: /Research/
 
 ### Research interesting
 
-*This is supposed to be an explanation of my research interesting.*
+My current research focuses on $p$-adic representations and Bruhat-Tits buildings. More precisely, I'm interested in the stable simplices in the Bruhat-Tits building obtained from a $p$-adic representation.
+Other interests include $p$-adic geometry, transcendental number theory, D-modules, homotopical algebras, and higher category theory.
 
 ### Expository writing
 
