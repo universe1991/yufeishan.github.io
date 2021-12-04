@@ -12,12 +12,9 @@ Other interests include algebraic topology, chiral algebras, D-modules, higher c
 
 ### Expository writing
 
-*There should be a list of my expository writings.*
+*Under construction*
 
 ### Publications 
 
-*There should be a list of my published research writings.*
-
-### Preprints 
-
-*There should be a list of my unpublished research writings.*
+- Xu Gao, [“*Extensions and Non-abelian Cohomology of Pre-Lie Algebras*”](https://github.com/GauSyu/Thesis/blob/master/CIM-GaoXu(2120120012).pdf), Master degree thesis, 2015, Nankai University
+- Xu Gao, Ming Liu, Chengming Bai and Naihuan Jing, [“*Rota-Baxter Operators on Witt and Virasoro Algebras*”](https://doi.org/10.1016/j.geomphys.2016.06.007), Journal of Geometry and Physics, vol.108, 2016, pp.1-20.
