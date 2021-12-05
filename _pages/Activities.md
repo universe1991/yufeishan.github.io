@@ -21,5 +21,5 @@ permalink: /Activities/
 - **The Lie Theory Workshop**  
   Sichuan University, July, 2014
 
-- **Conference on arithmetic geometry** 
+- **Conference on arithmetic geometry**  
   Nankai University, June 2013
