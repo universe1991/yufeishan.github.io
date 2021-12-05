@@ -6,8 +6,7 @@ permalink: /Activities/
 
 ### Attended Academic Activities
 
-- **Sparsity of Algebraic Points**, *MSRI Summer Graduate School* 
-  
+- **Sparsity of Algebraic Points**, *MSRI Summer Graduate School*     
   Mathematical Sciences Research Institute, June 7--18, 2021
 
 
