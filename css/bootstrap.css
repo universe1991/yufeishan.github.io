@@ -209,7 +209,7 @@ textarea {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 15px;
 }
 
