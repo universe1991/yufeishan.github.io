@@ -31,7 +31,7 @@ permalink: /Activities/
   with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
   Fall 2018 -- Spring 2018
 
-- **D-modules**  
+- [**D-modules**](https://github.com/GauSyu/D-modules)  
   with Tzu-Mo Kuo and Yufei Shan   
   Fall 2017 -- Fall 2018
 
