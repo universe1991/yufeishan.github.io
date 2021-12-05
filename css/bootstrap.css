@@ -210,7 +210,7 @@ textarea {
 
 table {
   border-collapse: collapse;
-  border-spacing: 3px;
+  border-spacing: 15px;
 }
 
 @media print {
