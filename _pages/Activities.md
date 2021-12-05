@@ -39,4 +39,10 @@ permalink: /Activities/
   with Yiyi Zhu  
   Spring & Summer 2017
 
-- **Dirichlet Theorem**
+- [**Primes in arithmetic progressions**](https://github.com/GauSyu/SmallNotes/blob/master/Dirichlet.pdf)  
+  with Hanbin Zhang  
+	Spring 2016
+
+- [**Neukirch's algebraic number theory**](https://github.com/GauSyu/ANT/blob/master/Solutions%20to%20Neukirch%20ANT.pdf)  
+  with Hanbin Zhang and Yiyi Zhu
+  Fall 2014 -- Summer 2015
