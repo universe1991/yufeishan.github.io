@@ -27,13 +27,16 @@ permalink: /Activities/
 
 ### Organized Reading Groups
 
-- **Holotopical algebras** with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
+- **Holotopical algebras**  
+  with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
   Fall 2018 -- Spring 2018
 
-- **D-modules** with Tzu-Mo Kuo and Yufei Shan   
+- **D-modules**  
+  with Tzu-Mo Kuo and Yufei Shan   
   Fall 2017 -- Fall 2018
 
-- **Chiral algebras** with Yiyi Zhu  
+- **Chiral algebras**  
+  with Yiyi Zhu  
   Spring & Summer 2017
 
 - **Dirichlet Theorem**
