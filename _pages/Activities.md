@@ -48,13 +48,13 @@ permalink: /Activities/
 	Spring 2016
 
 - [**Algebraic geometry**](https://github.com/GauSyu/Algebraic-Geometry)  
-  with Hanbin Zhang
+  with Hanbin Zhang  
 	Fall 2015 -- Spring 2016
 
 - [**Neukirch's algebraic number theory**](https://github.com/GauSyu/ANT/blob/master/Solutions%20to%20Neukirch%20ANT.pdf)  
-  with Hanbin Zhang and Yiyi Zhu
+  with Hanbin Zhang and Yiyi Zhu  
   Fall 2014 -- Spring 2015
 
 - [**Category theory**](https://github.com/GauSyu/BMO)  
-  with Hanbin Zhang and Yiyi Zhu
+  with Hanbin Zhang and Yiyi Zhu  
   Fall 2014 -- Spring 2015
