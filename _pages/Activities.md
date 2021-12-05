@@ -23,3 +23,12 @@ permalink: /Activities/
 
 - **Conference on arithmetic geometry**  
   Nankai University, June 2013
+
+
+### Organized Reading Groups
+
+- **D-modules**  
+  Fall 2017 -- Fall 2018
+
+- **Chiral algebras**  
+  Spring & Summer 2017
