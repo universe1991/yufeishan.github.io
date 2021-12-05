@@ -5,7 +5,7 @@ permalink: /Teaching/
 ---
 
 ### Teaching Assistant Experience
-| Season  | Course |
+| Quarter  | Course |
 | ------------- | ------------- |
 | Fall 2021 | MATH19B Calculus for Science, Engineering, and Mathematics | 
 | Summer 2021 | MATH110 Introduction to Number Theory | 
