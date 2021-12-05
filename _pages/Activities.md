@@ -27,9 +27,13 @@ permalink: /Activities/
 
 ### Organized Reading Groups
 
-- **Holotopical algebras**  
+- **Homotopical algebras**  
   with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
-  Fall 2018 -- Spring 2018
+  Winter 2019 -- Fall 2019
+
+- [**Homological algebras**](https://github.com/GauSyu/Cohomology)  
+  with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
+  Fall 2018
 
 - [**D-modules**](https://github.com/GauSyu/D-modules)  
   with Tzu-Mo Kuo and Yufei Shan   
