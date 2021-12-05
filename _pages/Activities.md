@@ -27,6 +27,9 @@ permalink: /Activities/
 
 ### Organized Reading Groups
 
+- **Holotopical algebras**  
+  Fall 2018 -- Spring 2018
+
 - **D-modules**  
   Fall 2017 -- Fall 2018
 
