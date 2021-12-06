@@ -61,4 +61,4 @@ permalink: /Activities/
 
 - [**Category theory**](https://github.com/GauSyu/BMO)  
   with Hanbin Zhang and Yiyi Zhu  
-  Fall 2013 -- Spring 2015
+  Fall 2013 -- Spring 2014
