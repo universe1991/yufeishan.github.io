@@ -2,23 +2,23 @@
 locale                   : "en-US"
 title                    : "Gau-Syu"
 title_separator          : "-"
-name                     : "Xu Gao"
-url                      : https://gausyu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Yufei Shan"
+url                      : https://yufeishan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "gausyu/gausyu.github.io"
+repository               : universe1991/yufeishan.github.io
 words_per_minute         : 160
 future                   : true
 
 # Profile
 profile:
-    name                 : "Gau, Syu"
-    email                : "gausyu@gmail.com"
+    name                 : "Shan, Yufei"
+    email                : "yshan7@ucsc.edu"
     description          : &description "personal description"
     image                : "img/IMG_2652.jpeg"
     cv                   : "cv.pdf"
     employer             : "UCSC"
     orcid                : "0000-0001-8284-6955"
-    github               : "gausyu"
+    github               : "universe1991"
 
 
 # Reading Files
