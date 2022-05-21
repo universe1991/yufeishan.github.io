@@ -4,61 +4,13 @@ title: Activities
 permalink: /Activities/
 ---
 
-### Attended Academic Activities
+### Invited Talk
 
-- **Sparsity of Algebraic Points**, *MSRI Summer Graduate School*     
-  Mathematical Sciences Research Institute, June 7--18, 2021
+- <a href="https://www.math.ucsc.edu/seminars/grad-colloquium/index.html#may13"><strong>The Heat Kernel Estimate on the Asymptotically Hyperbolic Manifold and the Stability of the Asymptotically Hyperbolic Einstein Manifold</strong></a> 
 
-- **Topology and Arithmetic**, *Arizona Winter School*   
-  University of Arizona, March 2--6, 2019
+  *Graduate Colloquium*, UC Santa Cruz, May 13th 2021, <a href="">The link for slices</a>
 
-- **Vertex Operator Algebras and Related Topics**  
-  Sichuan University, August, 2019
+- <a href="https://www.math.pku.edu.cn/kxyj/xsbg/tlb/geometric/100057.htm"><strong>Asymptotically symmetric space and Ricci flow</strong></a> 
 
-- **Workshop on Lie Theory and Representation Theory**  
-  Sichuan University, May, 2016
+  *Geometric Analysis and Mathematical General Relativity Seminar*, Peking University, August 8th 2019 <a href="">The link for slices</a>
 
-- **The Lie Theory Workshop**  
-  Sichuan University, July, 2014
-
-- **Sino-French Conference on Arithmetic Geometry**  
-  Nankai University, June, 2013
-
-
-### Organized Reading Groups
-
-- **Arakelov geometry**  
-  with Jianqi Liu and Yufei Zhang   
-	Fall 2019 -- Spring 2020
-
-- **Homotopical algebras**  
-  with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
-  Winter 2019 -- Fall 2019
-
-- [**Homological algebras**](https://github.com/GauSyu/Cohomology)  
-  with Tzu-Mo Kuo, Jianqi Liu, Yufei Shan and Yufei Zhang   
-  Fall 2018
-
-- [**D-modules**](https://github.com/GauSyu/D-modules)  
-  with Tzu-Mo Kuo and Yufei Shan   
-  Fall 2017 -- Fall 2018
-
-- **Chiral algebras**  
-  with Yiyi Zhu  
-  Spring & Summer 2017
-
-- [**Primes in arithmetic progressions**](https://github.com/GauSyu/SmallNotes/blob/master/Dirichlet.pdf)  
-  with Hanbin Zhang  
-	Spring 2016
-
-- [**Algebraic geometry**](https://github.com/GauSyu/Algebraic-Geometry)  
-  with Hanbin Zhang  
-	Fall 2015 -- Spring 2016
-
-- [**Neukirch's algebraic number theory**](https://github.com/GauSyu/ANT)  
-  with Hanbin Zhang and Yiyi Zhu  
-  Fall 2014 -- Spring 2015
-
-- [**Category theory**](https://github.com/GauSyu/BMO)  
-  with Hanbin Zhang and Yiyi Zhu  
-  Fall 2013 -- Spring 2014
