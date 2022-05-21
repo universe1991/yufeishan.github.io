@@ -12,5 +12,5 @@ permalink: /Activities/
 
 - <a href="https://www.math.pku.edu.cn/kxyj/xsbg/tlb/geometric/100057.htm"><strong>Asymptotically symmetric space and Ricci flow</strong></a> 
 
-  *Geometric Analysis and Mathematical General Relativity Seminar*, Peking University, August 8th 2019 <a href="https://universe1991.github.io/yufeishan.github.io/assets/Asymptotically%20symmetric%20manifolds%20and%20Ricci%20flow.pdf">The link for slices</a>
+  *Geometric Analysis and Mathematical General Relativity Seminar*, Peking University, August 8th 2019 <a href="https://universe1991.github.io/yufeishan.github.io/assets/Asymptotically_symmetric_manifolds_and Ricci_flow.pdf">The link for slices</a>
 
