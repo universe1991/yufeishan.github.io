@@ -1,7 +1,7 @@
 ---
 layout: note
 title: Activities
-permalink: /yufeishan.github.io/Activities/
+permalink: /Activities/
 ---
 
 ### Invited Talk
