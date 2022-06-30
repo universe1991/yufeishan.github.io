@@ -17,7 +17,7 @@ permalink: /Projects/
      <li>Deployed server to <strong>Amazon EC2</strong> to handle 150 queries per second tested by <strong>Apache JMeter</strong></li>
      <li>Designed an interactive web page utilizing <strong>AJAX</strong> technology (<strong>HTML, CSS and JavaScript</strong>).</li>
     </ul>
-  <li><strong>Photo Sharing: A photo sharing application developed by React Native and Firebase on the expo platform</strong> (Sep 2021 - Oct 2021) <a href="https://github.com/universe1991/Photo-Sharing">More details</a> </li> 
+  <li><strong>Photo Sharing: A photo sharing application developed by React Native and Firebase on the expo platform</strong> (Sep 2021 - Oct 2021)</li> <a href="https://github.com/universe1991/Photo-Sharing">More details</a> 
    <ul>
     <li>Utilized <strong>Firebase</strong> to handle authentications and to store the user‘s information and posts.</li>
     <li>Utilized <strong>Redux</strong> library to manage and centralize application state.</li>
