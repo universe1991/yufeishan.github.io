@@ -9,5 +9,8 @@ main:
   - title: "Activities"
     url: /Activities/
     
+  - title: "Projects"
+    url: /Projects/
+    
   - title: "Contact"
     url: /contact/
