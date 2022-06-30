@@ -17,9 +17,11 @@ permalink: /Projects/
      <li>Deployed server to <strong>Amazon EC2</strong> to handle 150 queries per second tested by <strong>Apache JMeter</strong></li>
      <li>Designed an interactive web page utilizing <srong>AJAX</strong> technology (<strong>HTML, CSS and JavaScript</strong>).</li>
     </ul>
-  <li><strong>The Perturbation Existence and the stability of Conformally Compact Einstein Manifolds under the Ricci flow</strong> (joint with Jie Qing) <a href="https://universe1991.github.io/yufeishan.github.io/assets/Normalized_Ricci_flow_and_conformally_compact_Einstein_manifolds.pdf">(A draft of my paper about this result)</a> </li> 
+  <li><strong>Photo Sharing: A photo sharing application developed by React Native and Firebase on the expo platform</strong> (Sep 2021 - Oct 2021) <a href="https://github.com/universe1991/Photo-Sharing">More details</a> </li> 
    <ul>
-    <li>Recovered <a href="https://arxiv.org/pdf/math/0105046.pdf">J. Lee's result (See the Theorem A)</a> about the perturbation Existence of the conformally compact Einstein manifolds by the Ricci flow</li>
-    <li>Improved <a href="ttps://arxiv.org/pdf/1106.0372.pdf">the result of J.Qing, Y.Shi and J.Wu (See Theorem 1.3)</a> about the stability of conformally compact Einstein manifolds. </li>
+    <li>Utilized <strong>Firebase</strong> to handle authentications and to store the user‘s information and posts.</li>
+    <li>Utilized <strong>Redux</strong> library to manage and centralize application state.</li>
+    <li>Deployed this app via <strong>Firebase</strong> and employed the <strong>Firebase analytics</strong> to record the app usage and user engagement.</li>
+    <li>Built an interactive UI by <strong>React Native</strong> and used the Firebase <strong>Robo test</strong> to test performances on 5 physical and 10 virtual devices.</li>
    </ul>
 </ol>
