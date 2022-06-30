@@ -7,11 +7,15 @@ permalink: /Projects/
 ### Research interests
 
 <ol reversed>
-  <li><strong>The Heat Kernel Estimate on the Asymptotically Hyperbolic Manifolds and the Stability of the Asymptotically Hyperbolic Einstein Manifolds</strong> (joint with Jie Qing) </li> <a href="https://universe1991.github.io/yufeishan.github.io/assets/The_asymptotically_hyperbolic_manifolds_and_the_heat_kernel_estimate.pdf">More details</a>
+  <li><strong>Ticket+: Java Web Service Development-Event Search and Ticket Recommendation</strong> (Jan 2022 - Feb 2022) </li> <a href="https://github.com/universe1991/Ticket-plus">More details</a>
     <ul> 
-     <li> Studied the relations between the heat kernel of Lichnerowicz Laplacian and the long time existence and the convergence of the Ricci flow based on the <a href="https://arxiv.org/pdf/1011.4267.pdf">result of R.Bamler </a>.</li>
-     <li> Studied the relations between the heat kernel of Lichnerowicz Laplacian and the resolvent of Lichnerowicz Laplacian (This is a direct corollary of the spectrum theorem) and tried to get the estimate of the heat kernel of Lichnerowicz Laplacian by the corresponding Schwartz kernel of that. By the <a href="https://arxiv.org/pdf/1612.06044.pdf">work of X.Chen and A.Hassell</a>, in order to get a good estimate of the heat kernel of of Lichnerowicz Laplacian, we need a tensor version result of <a href="https://arxiv.org/pdf/1103.3507.pdf">R.B.Melrose, A.S.Barreto and A.Vasy</a>. </li> 
-     <li> Trying to generalized the result of R.B.Melrose, A.S.Barreto, A.Vasy about the Schwartz kernel estimate from the Laplacian operator on the function to the Lichnerowicz Laplacian on the symmetric two tensor. </li>
+     <li> Developed an interactive web page for users to search events and purchase tickets.</li>
+     <li> Improved personalized business recommendation based on search history and favorite records. </li> 
+     <li> Created Java servlets with <strong>RESTful</strong> APIs to handle HTTP requests and responses.</li>
+     <li>Built relational (<strong>MySQL</strong>) and non-relational database (<strong>MongoDB</strong>), to obtain real business data from Yelp API.</li>
+     <li>Designed algorithms (e.g., <strong>content-based recommendation</strong>) to implement business recommendation.</li>
+     <li>Deployed server to <strong>Amazon EC2</strong> to handle 150 queries per second tested by <strong>Apache JMeter</strong></li>
+     <li>Designed an interactive web page utilizing <srong>AJAX</strong> technology (<strong>HTML, CSS and JavaScript</strong>).</li>
     </ul>
   <li><strong>The Perturbation Existence and the stability of Conformally Compact Einstein Manifolds under the Ricci flow</strong> (joint with Jie Qing) <a href="https://universe1991.github.io/yufeishan.github.io/assets/Normalized_Ricci_flow_and_conformally_compact_Einstein_manifolds.pdf">(A draft of my paper about this result)</a> </li> 
    <ul>
