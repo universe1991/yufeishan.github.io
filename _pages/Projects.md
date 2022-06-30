@@ -15,7 +15,7 @@ permalink: /Projects/
      <li>Built relational (<strong>MySQL</strong>) and non-relational database (<strong>MongoDB</strong>), to obtain real business data from Yelp API.</li>
      <li>Designed algorithms (e.g., <strong>content-based recommendation</strong>) to implement business recommendation.</li>
      <li>Deployed server to <strong>Amazon EC2</strong> to handle 150 queries per second tested by <strong>Apache JMeter</strong></li>
-     <li>Designed an interactive web page utilizing <srong>AJAX</strong> technology (<strong>HTML, CSS and JavaScript</strong>).</li>
+     <li>Designed an interactive web page utilizing <strong>AJAX</strong> technology (<strong>HTML, CSS and JavaScript</strong>).</li>
     </ul>
   <li><strong>Photo Sharing: A photo sharing application developed by React Native and Firebase on the expo platform</strong> (Sep 2021 - Oct 2021) <a href="https://github.com/universe1991/Photo-Sharing">More details</a> </li> 
    <ul>
