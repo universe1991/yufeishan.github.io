@@ -4,7 +4,7 @@ title: Projects
 permalink: /Projects/
 ---
 
-### Research interests
+### Computer Science Projects
 
 <ol reversed>
   <li><strong>Ticket+: Java Web Service Development-Event Search and Ticket Recommendation</strong> (Jan 2022 - Feb 2022) </li> <a href="https://github.com/universe1991/Ticket-plus">More details</a>
