@@ -1,0 +1,18 @@
+current directory: /Users/YufeiShan/Documents/personWebsite/yufeishan.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/YufeiShan/Documents/personWebsite/yufeishan.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250906-36769-wu42jk sitelibdir\=./.gem.20250906-36769-wu42jk clean
+
+current directory: /Users/YufeiShan/Documents/personWebsite/yufeishan.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250906-36769-wu42jk sitelibdir\=./.gem.20250906-36769-wu42jk
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/YufeiShan/Documents/personWebsite/yufeishan.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250906-36769-wu42jk sitelibdir\=./.gem.20250906-36769-wu42jk install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250906-36769-wu42jk/racc
+
+current directory: /Users/YufeiShan/Documents/personWebsite/yufeishan.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250906-36769-wu42jk sitelibdir\=./.gem.20250906-36769-wu42jk clean

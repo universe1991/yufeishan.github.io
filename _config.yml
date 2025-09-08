@@ -3,8 +3,8 @@ locale                   : "en-US"
 title                    : "Shan-Yufei"
 title_separator          : "-"
 name                     : "Yufei Shan"
-url                      : https://github.com/universe1991/yufeishan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/yufeishan.github.io/" # the subpath of your site, e.g. "/blog"
+url                      : https://localhost:4000 #https://github.com/universe1991/yufeishan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" #"/yufeishan.github.io/" # the subpath of your site, e.g. "/blog"
 repository               : /universe1991/yufeishan.github.io
 words_per_minute         : 160
 future                   : true
@@ -12,11 +12,11 @@ future                   : true
 # Profile
 profile:
     name                 : "Shan, Yufei"
-    email                : "yshan7@ucsc.edu"
+    email                : "universeplane1991@sjtu.edu.cn"
     description          : &description "personal description"
     image                : "img/111 copy.jpg"
     cv                   : "cv.pdf"
-    employer             : "UCSC"
+    employer             : "SJTU"
     orcid                : "0000-0001-8284-6955"
     github               : "universe1991"
 
