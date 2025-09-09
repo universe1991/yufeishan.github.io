@@ -1,9 +1,13 @@
 ---
 layout: note
-title: Research
-permalink: /Research/
+title: Publications & Preprints
+permalink: /Publications/
 ---
+<ol reversed> 
+    <li> Jiaqi Chen, Yufei Shan, Yinghui Ye, <strong>Comparison of total -curvature</strong>, submitted to Journal of Geometric Analysis, preprint available at <a href="arXiv:2505.23440">arXiv:2505.23440</a> [math.DG], 2025
+    <li> Jiaqi Chen, Yufei Shan, Yinghui Ye, <strong>The volume comparison of symmetric spaces of noncompact type of rank 1</strong>, submitted to Science China Mathematics, preprint available at <a href="arXiv: 2508.08674">arXiv: 2508.08674</a> [math.DG], 2025
 
+<!--
 ### Research interests
 
 <ol reversed>
@@ -19,7 +23,7 @@ permalink: /Research/
     <li>Improved <a href="ttps://arxiv.org/pdf/1106.0372.pdf">the result of J.Qing, Y.Shi and J.Wu (See Theorem 1.3)</a> about the stability of conformally compact Einstein manifolds. </li>
    </ul>
 </ol>
-
+-->
 
 
     
