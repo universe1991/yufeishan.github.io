@@ -3,8 +3,8 @@ locale                   : "en-US"
 title                    : "Shan-Yufei"
 title_separator          : "-"
 name                     : "Yufei Shan"
-url                      : "https://yufeishan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" #"/yufeishan.github.io/" # the subpath of your site, e.g. "/blog"
+url                      : "https://github.com/universe1991" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/yufeishan.github.io" # the subpath of your site, e.g. "/blog"
 repository               : /universe1991/yufeishan.github.io
 words_per_minute         : 160
 future                   : true
