@@ -4,7 +4,8 @@ title: Publications & Preprints
 permalink: /Publications/
 ---
 <ol reversed> 
-    <li> Jiaqi Chen, Yufei Shan, Yinghui Ye, <strong>Comparison of total -curvature</strong>, submitted to Journal of Geometric Analysis, preprint available at <a href="arXiv:2505.23440">arXiv:2505.23440</a> [math.DG], 2025
+    <li> Jiaqi Chen, Yufei Shan, Yinghui Ye, <strong>Comparison of total sigma_k-curvature</strong>, . J Geom Anal 36, 112 (2026). <a href="https://doi.org/10.1007/s12220-026-02358-4">https://doi.org/10.1007/s12220-026-02358-4</a>
+
     <li> Jiaqi Chen, Yufei Shan, Yinghui Ye, <strong>The volume comparison of symmetric spaces of noncompact type of rank 1</strong>, submitted to Science China Mathematics, preprint available at <a href="arXiv: 2508.08674">arXiv: 2508.08674</a> [math.DG], 2025
 
 <!--
